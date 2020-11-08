@@ -132,6 +132,7 @@ class Scratch3OperatorsBlocks {
         const operator = Cast.toString(args.OPERATOR).toLowerCase();
         const n = Cast.toNumber(args.NUM);
         switch (operator) {
+        case 'square': return Math.pow(n, 2);
         case 'abs': return Math.abs(n);
         case 'floor': return Math.floor(n);
         case 'ceiling': return Math.ceil(n);
